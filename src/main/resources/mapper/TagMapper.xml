@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.yjsq.wk.mapper.TagMapper">
+
+    <resultMap id="tagMap" type="org.yjsq.wk.bean.entity.Tag">
+        <id property="id" column="id"/>
+        <result property="tagName" column="tag_name"/>
+        <result property="status" column="status"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+    <sql id="baseColumn">
+        id, tag_name, status, create_time, create_by, update_time, update_by
+    </sql>
+
+    <insert id="insert">
+        INSERT INTO tag
+        (id, tag_name, status, create_time, create_by, update_time, update_by)
+        VALUES
+        (#{tag.id},#{tag.tagName},#{tag.status},#{tag.createTime},#{tag.createBy},#{tag.updateTime},#{tag.updateBy})
+    </insert>
+
+    <select id="selectByName" resultMap="tagMap">
+        SELECT <include refid="baseColumn"/>
+        FROM tag
+        WHERE tag_name = #{tagName}
+    </select>
+
+    <select id="selectList" resultMap="tagMap">
+        SELECT <include refid="baseColumn"/>
+        FROM tag
+        ORDER BY id DESC
+        LIMIT #{startNum}, #{pageSize}
+    </select>
+
+    <select id="selectCount" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM tag
+    </select>
+
+</mapper>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.yjsq.wk.mapper.UserMapper">
+
+    <resultMap id="userMap" type="org.yjsq.wk.bean.entity.User">
+        <id property="id" column="id"/>
+        <result property="loginName" column="login_name"/>
+        <result property="password" column="password"/>
+        <result property="nickName" column="nick_name"/>
+        <result property="email" column="email"/>
+        <result property="phone" column="phone"/>
+        <result property="gender" column="gender"/>
+        <result property="avatar" column="avatar"/>
+        <result property="source" column="source"/>
+        <result property="status" column="status"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+    <sql id="baseColumn">
+        id, login_name, password, nick_name, email, phone, gender, avatar, source, status, create_time, create_by,
+        update_time, update_by
+    </sql>
+
+    <insert id="insert">
+        INSERT INTO user
+        (id, login_name, password, nick_name, email, phone, gender, avatar, source, status, create_time, create_by,
+        update_time, update_by)
+        VALUES
+        (#{user.id},#{user.loginName},#{user.password},#{user.nickName},#{user.email},#{user.phone},#{user.gender}
+        ,#{user.avatar},#{user.source},#{user.status},#{user.createTime},#{user.createBy},#{user.updateTime},#{user.updateBy}
+        )
+    </insert>
+
+    <update id="updatePassword">
+        UPDATE user
+        SET password = #{pwd}
+        WHERE id = #{id}
+    </update>
+
+    <select id="findUserById" resultMap="userMap">
+        SELECT
+        <include refid="baseColumn"/>
+        FROM user
+        WHERE id = #{id}
+    </select>
+
+    <select id="findUserByEmail" resultMap="userMap">
+        SELECT
+        <include refid="baseColumn"/>
+        FROM user
+        WHERE email = #{email}
+    </select>
+
+    <select id="findUserByLoginName" resultMap="userMap">
+        SELECT
+        <include refid="baseColumn"/>
+        FROM user
+        WHERE login_name = #{loginName}
+    </select>
+
+    <select id="selectList" resultMap="userMap">
+        SELECT <include refid="baseColumn"/>
+        FROM user
+        ORDER BY id DESC
+        LIMIT #{startNum}, #{pageSize}
+    </select>
+    <select id="selectCount" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM user
+    </select>
+</mapper>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="293640b7-95b5-4656-aee4-8741983da9a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/entity/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/entity/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/AddTagParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/AddUserParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/DocListParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/LoginParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/PageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/TagListParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/UpdatePwdParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/UserListParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/CategoryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/DocumentVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/ListVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/LoginVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/TagVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/common/CommonCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/common/RespCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/common/StringConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/TagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/exception/BizException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/exception/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/mapper/TagMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/TagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/impl/TagServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/utils/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/utils/SecurityUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/TagMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2tGPSKrpOZonSRBvAynEFTQNO7G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Debug",
+    "Application.SecurityUtil.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/imnot/Code/Java/switch-docs/src/main/resources/mapper",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\imnot\Code\Java\switch-docs\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.yjsq.wk.App" />
+      <module name="switch-docs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yjsq.wk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.yjsq.wk.utils.SecurityUtil" />
+      <module name="switch-docs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yjsq.wk.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.SecurityUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="293640b7-95b5-4656-aee4-8741983da9a7" name="Changes" comment="" />
+      <created>1739975436335</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739975436335</updated>
+    </task>
+    <servers />
+  </component>
+</project>
