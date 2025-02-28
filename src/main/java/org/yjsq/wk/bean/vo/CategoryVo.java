@@ -10,6 +10,7 @@ public class CategoryVo {
 
     private String id;
     private String categoryName;
+    private Integer level;
     private List<Category> list;
 
 }

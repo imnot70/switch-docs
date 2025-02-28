@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="293640b7-95b5-4656-aee4-8741983da9a7" name="Changes" comment="base">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/AddCategoryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/CategoryListParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/CategoryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/CategoryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/CategoryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "imnot70"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/imnot70/switch-docs.git",
@@ -108,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740314518301</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="base">
+      <option name="closed" value="true" />
+      <created>1740314666039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740314666039</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
