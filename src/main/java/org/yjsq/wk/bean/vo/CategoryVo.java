@@ -11,6 +11,14 @@ public class CategoryVo {
     private String id;
     private String categoryName;
     private Integer level;
-    private List<Category> list;
+    private List<CategoryVo> list;
 
+    public CategoryVo() {
+    }
+
+    public CategoryVo(Category category) {
+        this.id = String.valueOf(category.getId());
+        this.categoryName = category.getCategoryName();
+        this.level = category.getLevel();
+    }
 }

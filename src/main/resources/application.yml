@@ -40,3 +40,5 @@ management:
 system:
   login:
     cache: 12
+  upload:
+    dir: C:\Users\imnot\Desktop\Temp

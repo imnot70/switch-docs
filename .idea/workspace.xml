@@ -5,12 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="293640b7-95b5-4656-aee4-8741983da9a7" name="Changes" comment="base">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/AddCategoryParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/CategoryListParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/DocCategoryRel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/DocSearchParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/DocTagRel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/UploadFileParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/mapper/DocumentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/task/LoadDataRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/utils/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DocumentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/AddCategoryParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/AddCategoryParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/CategoryListParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/CategoryListParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/DocListParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/param/DocListParam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/CategoryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/CategoryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/DocumentVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/bean/vo/DocumentVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/common/CommonCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/common/CommonCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/common/StringConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/common/StringConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yjsq/wk/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +48,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "imnot70"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;imnot70&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/imnot70/switch-docs.git",
-    "accountId": "2843f867-ac90-4198-9f5f-b6e55bfaaae5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/imnot70/switch-docs.git&quot;,
+    &quot;accountId&quot;: &quot;2843f867-ac90-4198-9f5f-b6e55bfaaae5&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -49,32 +68,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Debug",
-    "Application.SecurityUtil.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/imnot/Code/Java/switch-docs/src/main/resources/mapper",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.FileServiceImpl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SecurityUtil.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/imnot/Code/Java/switch-docs/src/main/resources/mapper&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\imnot\Code\Java\switch-docs\src\main\resources\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.FileServiceImpl">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.yjsq.wk.App" />
       <module name="switch-docs" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.yjsq.wk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.yjsq.wk.service.impl.FileServiceImpl" />
+      <module name="switch-docs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yjsq.wk.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileServiceImpl" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.SecurityUtil" />
       </list>
@@ -127,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740314666039</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="base">
+      <option name="closed" value="true" />
+      <created>1740707954075</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740707954075</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

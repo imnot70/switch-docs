@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.yjsq.wk.mapper.DocumentMapper">
+
+    <resultMap id="documentMap" type="org.yjsq.wk.bean.entity.Document">
+        <id property="id" column="id"/>
+        <result property="ownerId" column="owner_id"/>
+        <result property="title" column="title"/>
+        <result property="size" column="size"/>
+        <result property="extName" column="ext_name"/>
+        <result property="url" column="url"/>
+        <result property="visible" column="visible"/>
+        <result property="downloadable" column="downloadable"/>
+        <result property="status" column="status"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+    <sql id="baseColumn">
+        id, owner_id, title, size, ext_name, url, visible, downloadable, status, create_time, create_by, update_time,
+        update_by
+    </sql>
+
+    <insert id="insert">
+        INSERT INTO document
+        (id, owner_id, title, size, ext_name, url, visible, downloadable, status, create_time, create_by, update_time,
+        update_by)
+        VALUES
+        (#{doc.id},#{doc.ownerId},#{doc.title},#{doc.size},#{doc.extName},#{doc.url},#{doc.visible},#{doc.downloadable},#{doc.status}
+        ,#{doc.createTime},#{doc.createBy},#{doc.updateTime},#{doc.updateBy})
+    </insert>
+
+    <select id="selectListCount" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM document d
+        INNER JOIN doc_tag_rel t
+        ON d.id = t.doc_id
+        INNER JOIN doc_category_rel c
+        ON d.id = c.doc_id
+        WHERE status = 0
+        <if test="ownerId != null">
+            AND d.owner_id = #{ownerId}
+        </if>
+        <if test="type != null and type != ''">
+            AND d.ext_name = #{type}
+        </if>
+        <if test="categoryId != null">
+            AND c.category_id = #{categoryId}
+        </if>
+        <if test="tagId != null">
+            AND t.tag_id = #{tagId}
+        </if>
+    </select>
+
+    <select id="selectList" resultMap="documentMap">
+        SELECT
+        <include refid="baseColumn"/>
+        FROM document d
+        INNER JOIN doc_tag_rel t
+        ON d.id = t.doc_id
+        INNER JOIN doc_category_rel c
+        ON d.id = c.doc_id
+        WHERE status = 0
+        <if test="ownerId != null">
+            AND d.owner_id = #{ownerId}
+        </if>
+        <if test="type != null and type != ''">
+            AND d.ext_name = #{type}
+        </if>
+        <if test="categoryId != null">
+            AND c.category_id = #{categoryId}
+        </if>
+        <if test="tagId != null">
+            AND t.tag_id = #{tagId}
+        </if>
+        ORDER BY d.id DESC
+        LIMIT #{startNum}, #{pageSize}
+    </select>
+
+    <delete id="removeFileById">
+        UPDATE document
+        SET status = 1
+        WHERE id = #{id}
+    </delete>
+
+    <delete id="removeFileByIds">
+        UPDATE document
+        SET status = 1
+        WHERE id IN
+        <foreach collection="ids" separator="," open="(" close=")" item="id">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="selectById" resultMap="documentMap">
+        SELECT
+        <include refid="baseColumn"/>
+        FROM document
+        WHERE id = #{id}
+    </select>
+
+    <delete id="deleteById">
+        DELETE FROM document
+        WHERE id = #{id}
+    </delete>
+
+    <delete id="deleteByIds">
+        DELETE FROM document
+        WHERE id IN
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </delete>
+
+    <insert id="insertTags">
+        INSERT INTO doc_tag_rel
+        (doc_id, tag_id)
+        VALUES
+        <foreach collection="items" item="item" separator=",">
+            (#{item.docId}, #{item.tagId})
+        </foreach>
+    </insert>
+
+    <insert id="insertCategories">
+        INSERT INTO doc_category_rel
+        (doc_id, category_id)
+        VALUES
+        <foreach collection="items" item="item" separator=",">
+            (#{item.docId}, #{item.categoryId})
+        </foreach>
+    </insert>
+</mapper>

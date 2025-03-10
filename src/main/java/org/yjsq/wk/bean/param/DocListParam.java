@@ -8,9 +8,9 @@ import lombok.EqualsAndHashCode;
 public class DocListParam extends PageParam {
 
     private String type;
-
     private Long categoryId;
-
     private Long tagId;
 
+    private Long ownerId;
+    private String token;
 }

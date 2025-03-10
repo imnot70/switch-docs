@@ -5,8 +5,8 @@ import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class CategoryListParam extends PageParam{
+public class DocSearchParam extends DocListParam{
 
-    private Long parentId;
-    private Integer level;
+    private String keyword;
+
 }
